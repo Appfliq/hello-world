@@ -3,12 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# File path for the dataset
-file_path = r"C:\Users\mrakr\OneDrive\Official\Conestoga\Fall 2024\Week 12\crypto-23.csv"
+# Define the relative file path for the dataset
+file_path = "crypto-23.csv"
 
-# Check if file exists
+# Check if the file exists
 if not os.path.exists(file_path):
-    st.error(f"File not found: {file_path}. Please ensure the file is in the correct location.")
+    st.error(f"File not found: {file_path}. Please ensure the file is in the correct location in your repository.")
     st.stop()
 
 # Load the dataset
